@@ -140,6 +140,10 @@
    OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
    ```
 
+4. **基于GPT4.1与有效prompt生成的blog**
+
+    [生成式AI浪潮下的职业跃迁：路线选择、能力突围与持续成长](./example/生成式AI浪潮下的职业跃迁：路线选择、能力突围与持续成长.md)
+
 ## 参考
 
 - OpenAI 官方文档：https://platform.openai.com/docs
