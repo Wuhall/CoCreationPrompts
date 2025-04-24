@@ -1,4 +1,6 @@
 # LLM Co-Creation Prompts
+<details>
+<summary>🇨🇳 中文说明（点击展开/收起）</summary>
 
 ## 项目愿景
 
@@ -14,28 +16,19 @@
 
 1. **项目定位**
     - 明确本库旨在促进 LLM + USER 共创式协作，强调“澄清-质疑-创造-共识”的全过程示范。
-
 2. **共创 Prompt 设计理念**
     - 解释 LLM 既是答题者也是“需求澄清师”，以及如何用 prompt 反向让 AI 质疑你。
-
 3. **打破思维惯性与提问固化**
     - 总结人类提问常见陷阱
     - 展示 AI 如何协助“升级你的问题”
-
 4. **优质 Prompt 范式与示例精讲**
     - 每个范式包括实际例句，适用场景，背后原理，可能的优化方向与反思机会。
-
 5. **协作流程与迭代机制**
     - 明确 USER / AI 各自职责（如谁主提问，谁主假设挑战，如何处理共识冲突）
     - 开放“让 AI 挑战我提问方式”等协作模板
-
 6. **案例与多轮演进对话**
     - 展现 Prompt 迭代的完整过程
     - 把协作历史和思维调整记录下来，让改进有据可循
-
-7. **开放式贡献与持续完善**
-    - 鼓励用户对 Prompt 进行复用、批评、重构，并 Pull Request
-    - 建立“Prompt 进化史”，每个 Prompt 的优化讨论和分歧注解
 
 ## 高阶 Prompt 范式总览
 
@@ -125,10 +118,6 @@
 
 ---
 
-当然！下面是一个覆盖**环境配置、依赖安装、运行方法**的 README 示例，适用于你当前基于 OpenAI 新版 API 的流式问答脚本。
-
----
-
 ## demo环境准备
 
 1. **Python 版本**  
@@ -151,8 +140,6 @@
    OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
    ```
 
----
-
 ## 参考
 
 - OpenAI 官方文档：https://platform.openai.com/docs
@@ -160,6 +147,169 @@
 
 ---
 
-如有问题，请在 Issues 区留言或提交 PR 🙌
+</details>
 
 ---
+
+<details open>
+<summary>🇺🇸 English Version (Click to expand/collapse)</summary>
+
+# LLM Co-Creation Prompts
+
+## Project Vision
+
+This project is not simply a collection of “effective prompts,” but aims to promote deeper, higher-quality, more intentional co-creation between humans and LLMs. The core pursuit: **How can AI, as an active collaborative partner, help clarify the needs and intentions that we may not even fully recognize ourselves—transcending the limits of human expression, abstraction, and habit?**
+
+### Cognitive Background & Assumptions
+
+- **Prompts Are Not Magic:** The real value lies in iterative, collaborative interplay between human and model—not “just write a good prompt and you’re done.”
+- **Focus on the Limits of Expression & Understanding:** Human language tends to be ambiguous and full of blind spots. Quality prompts can reveal hidden assumptions, rigid structures, and habitual patterns in thinking, inspiring deeper innovation and more essential questioning.
+- **Fundamental Project Goal:** To build a resource hub supporting deep thinking, transparent collaboration, requirement reflection, and evolving case studies—serving personal growth and professional workflow upgrades.
+
+## Project Structure & Modules
+
+1. **Project Positioning**
+    - This repo is designed to boost co-creation between LLM and user, showcasing the entire cycle of “clarification, challenge, creation, consensus.”
+2. **Co-Creation Prompt Design Principles**
+    - LLM is not only an answer provider, but also a “requirement clarifier.” Learn how to use prompts to have AI challenge you in return.
+3. **Breaking Thinking Inertia & Fixed Questioning**
+    - Summarize common pitfalls in human questioning.
+    - Show how AI can help you “upgrade your questions.”
+4. **Excellent Prompt Paradigms & Explanations**
+    - Each paradigm includes example prompts, scenarios, underlying principles, potential optimizations, and opportunities for critical reflection.
+5. **Collaboration Process & Iteration Mechanisms**
+    - Clarify roles for USER and AI (e.g., who leads questioning, who challenges assumptions, how consensus is managed).
+    - Provide open collaboration templates such as “let AI critique my questioning method.”
+6. **Case Studies & Multi-round Evolving Dialogues**
+    - Illustrate the full prompt iteration process.
+    - Record collaboration history and mindset adjustments for traceable improvement.
+
+## Overview of Advanced Prompt Paradigms
+
+For each, include: **Applicable Scenario / Paradigm Description / Expandability**.
+
+---
+
+### 1. Have AI Actively Optimize Your Questions
+
+> "Please analyze any hidden assumptions behind my question, and propose more fundamental or valuable alternative questions."
+
+- **Applicable Scenario:** When your own expression feels imprecise or your goal definition seems inefficient.
+- **Paradigm Description:** Make the AI a “hypothesis hunter” to break you out of routine patterns.
+- **Expandability:** Iterate—AI suggests new questions → USER gives feedback → AI adjusts again.
+
+---
+
+### 2. Focus on Solution Approaches, Not Immediate Answers
+
+> "My question is ... Please do not answer outright. Instead, list out several main analysis paths, discuss pros/cons of each, and help me choose an approach."
+
+- **Applicable Scenario:** Facing complex, multi-pronged problems with trade-offs.
+- **Paradigm Description:** Reveal the AI’s “solution map” instead of a single answer.
+- **Expandability:** Add “downstream impact simulation,” supporting strategic upgrades.
+
+---
+
+### 3. Use AI to Identify Your Blind Spots & Reasonability
+
+> "Here is my draft plan: xxxx. Please, as a critical partner, identify the key flaws and hidden risks, and suggest improvements."
+
+- **Applicable Scenario:** For self-checking loopholes and avoiding cognitive biases.
+- **Paradigm Description:** AI plays multiple roles, broadening the scope of feedback.
+- **Expandability:** Allow different “roles” to challenge continuously for a full-spectrum review.
+
+---
+
+### 4. Let AI Guess Your True Goal
+
+> "Based on my question, please infer my true needs or motives, list three plausible variants, and explain your reasoning."
+
+- **Applicable Scenario:** To check if you're falling into “misaligned questioning” or “indirect objective” traps.
+- **Paradigm Description:** Leverage AI’s human-like reasoning to explicate the abstraction behind your goal.
+- **Expandability:** Allow the user to reverse-correct AI’s mis-inferences with new rules.
+
+---
+
+### 5. Reverse Traditional Q&A: AI Leads the Inquiry
+
+> "Here's a challenge: xxxx. Please use a Socratic approach—ask me one guiding question at a time, and dig deeper based on my answers."
+
+- **Applicable Scenario:** Brainstorming, inspiration, or nonlinear problem deconstruction.
+- **Paradigm Description:** Push topic exploration to a higher level, shattering the user's initial framing.
+- **Expandability:** Model different expert questioning chains.
+
+---
+
+### 6. Proactively Introduce Unconventional Ideas
+
+> "Besides standard methods, suggest two seemingly crazy but potentially valuable alternative solutions, and describe scenarios where they might work."
+
+- **Applicable Scenario:** Stimulate innovation and practice reverse thinking.
+- **Paradigm Description:** Have AI challenge its “safe-answer bias” and unlock more creative ground.
+- **Expandability:** Regularly incorporate “wild ideas” into mainstream strategic consideration.
+
+---
+
+### 7. Make Reasoning Chains & Uncertainty Explicit
+
+> "For this problem, outline every reasoning step in detail and assess your confidence at each step. Highlight areas of uncertainty."
+
+- **Applicable Scenario:** High-stakes or traceability-demanding contexts (e.g., research, complex decisions).
+- **Paradigm Description:** AI makes its thinking process explicit, letting users spot errors or fill in missing info.
+- **Expandability:** AI exposes low-confidence steps → USER gives extra clues → iterate again.
+- **Note:** Modern reasoning models have already supported this step.
+
+---
+
+### 8. Inspire User with AI's Deep Deliberation
+
+> "Be deep, think independently, and surprise me (but don’t mention ‘surprise’ in your answer). Before answering or doing the task, reflect on why I’m asking—could there be hidden reasons or context? Consider if my request itself is truly optimal, or if reframing it could reveal a better perspective. As you construct your answer, define what a successful answer should achieve (not just ‘answer my question,’ but really address my underlying need). Then, co-create with me—not just a one-shot reply, but by actively exploring better answers and even better questions."
+
+- **Applicable Scenario:** Encourage AI to proactively explore, meeting or even exceeding user expectations.
+- **Paradigm Description:** Foster a spiral of exploration, breaking user’s fixed patterns.
+
+---
+
+## Make AI a Rapidly-Evolving “Problem Finder” & Thinking Partner
+
+A good prompt doesn’t make AI a passive answerer—it draws it into constructing problems, elevating thinking, evolving requirements, and helping you get better at asking the right, deeper, and newer questions. This project aims to summarize systematic patterns and processes in practice, so you can harness LLMs as intellectual partners on your thinking journey.
+
+---
+
+## Demo Environment Setup
+
+1. **Python Version**  
+   Python 3.9 or above recommended
+
+2. **Dependencies**  
+   Run in project root:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   `requirements.txt` should include:
+   ```
+   openai>=1.0.0
+   python-dotenv
+   ```
+
+3. **Configure OpenAI API Key**  
+   At project root, create a `.env` file:
+   ```
+   OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+   ```
+   (Replace `sk-xxxx` with your OpenAI API Key.)
+
+---
+
+## References
+
+- [OpenAI Official Documentation](https://platform.openai.com/docs)
+- [openai-python SDK](https://github.com/openai/openai-python)
+
+---
+
+For questions, feel free to open an Issue or submit a PR 🙌
+
+---
+
+</details>
